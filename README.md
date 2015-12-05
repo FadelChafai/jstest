@@ -1,1 +1,4 @@
-# jstest
+# JS Test
+Mocha
+Karma
+Grunt
