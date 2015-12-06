@@ -2,6 +2,9 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
+		jshint: {
+			all: ['Gruntfile.js', 'lib/*.js', 'test/*.js']
+		},
 		simplemocha : {
 			options : {
 				globals : [ 'expect' ],
@@ -22,14 +25,14 @@ module.exports = function(grunt) {
 			    browsers: ['PhantomJS'],
 			    logLevel: 'ERROR',
 			    frameworks: ['mocha','browserify','jquery-2.1.0','sinon','chai'],
-			  
 			  }
 			}
-	 
 	});
 	
 	grunt.loadNpmTasks('grunt-simple-mocha');
 	grunt.loadNpmTasks('grunt-karma');
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	// Default task.
 	grunt.registerTask('default', [ 'simplemocha', 'karma' ]);
+
 };
