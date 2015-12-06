@@ -42,7 +42,11 @@ module.exports = function (grunt) {
             },
             // Configuration to be run (and then tested).
             plato: {
-                
+                default_options: {
+                    files: {
+                        'tmp/default_options': ['lib/**/*.js', 'test/**/*.js'],
+                    },
+                }
             }
 
         }
