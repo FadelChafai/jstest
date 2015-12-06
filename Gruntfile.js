@@ -45,7 +45,7 @@ grunt.loadNpmTasks('grunt-karma');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-concat');
 
-grunt.registerTask('default', ['simplemocha', 'karma']);
-grunt.registerTask('jenkins', ['jshint','simplemocha', 'karma', 'jshint', 'concat']);
+grunt.registerTask('default', ['jshint', 'simplemocha', 'karma']);
+grunt.registerTask('jenkins', ['jshint','simplemocha', 'karma', 'concat']);
 }
 ;
