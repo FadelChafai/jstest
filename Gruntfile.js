@@ -3,7 +3,11 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
             jshint: {
-                all: ['Gruntfile.js', 'lib/*.js', 'test/*.js']
+                all: ['Gruntfile.js', 'lib/*.js', 'test/*.js'],
+                options: {
+                    reporter: 'jshintreporter',
+                    reporterOutput: 'jshint.html'
+                }
             },
             simplemocha: {
                 options: {
