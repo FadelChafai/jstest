@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ci-test": "istanbul cover _mocha \"test/*Test.js\" > test/test.tap && istanbul report clover"
+    "ci-test": "istanbul cover _mocha \"test/*Test.js\" > test/test.tap && istanbul report clover",
+    "ci-lint": "jshint --reporter=checkstyle \"lib/*.js\" > checkstyle/checkstyle-result.xml"
+    
   },
   "author": "",
   "license": "BSD-2-Clause",
@@ -37,7 +39,6 @@
     "phantomjs": "~1.9.18",
     "readable-stream": "~2.0.2",
     "sinon": "~1.17.1",
-    "tape": "^4.2.2",
-    "testem": "^0.9.11"
+    "tape": "^4.2.2"
   }
 }
