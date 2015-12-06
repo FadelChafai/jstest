@@ -1,9 +1,9 @@
-'use strict';
-
 var assert = require('chai').assert;
 
 describe('Demo test: ', function(){
-	
+
+	'use strict';
+
 	it('Fair un 1er test', function(){
 		
 		var $a = 2;

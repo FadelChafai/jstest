@@ -1,5 +1,3 @@
-'use strict';
-
 var assert = require('chai').assert;
 var expect = require('chai').expect;
 var Class = require('../backlib/Classe');
@@ -7,6 +5,8 @@ var Class = require('../backlib/Classe');
 require('chai').should();
 
 describe('Test: ', function(){
+
+	'use strict';
 	
 	describe('#maFonction', function(){
 		
@@ -50,9 +50,9 @@ describe('Test: ', function(){
 				assert.equal(time,18, "Erreur asynchrone");
 				expect(time).to.equal(18);
 				done();
-			})
+			});
 			
-		})
+		});
 		
 	});
 });
