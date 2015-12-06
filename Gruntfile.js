@@ -26,13 +26,23 @@ module.exports = function(grunt) {
 			    logLevel: 'ERROR',
 			    frameworks: ['mocha','browserify','jquery-2.1.0','sinon','chai'],
 			  }
-			}
+		},
+		concat: {
+			options: {
+				separator: ';',
+			},
+			dist: {
+				src: ['lib/*.js'],
+				dest: 'dist/built.js',
+			},
+		}
 	});
 	
 	grunt.loadNpmTasks('grunt-simple-mocha');
 	grunt.loadNpmTasks('grunt-karma');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	// Default task.
-	grunt.registerTask('default', [ 'simplemocha', 'karma' ]);
+	grunt.registerTask('default', [ 'simplemocha', 'karma', 'jshint','concat' ]);
 
 };
