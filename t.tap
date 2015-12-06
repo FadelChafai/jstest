@@ -1,0 +1,12 @@
+1..8
+ok 1 Test:  maFonction Tester maFonction
+ok 2 Test:  maFonction Tester Division par 0
+ok 3 Test:  maFonction Tester should # SKIP -
+ok 4 Test:  maFonction future test # SKIP -
+ok 5 Test:  wait should exist
+ok 6 Test:  wait Test asynchrone
+ok 7 Demo test:  Fair un 1er test
+ok 8 Demo test:  Fair un 2eme test
+# tests 6
+# pass 6
+# fail 0
