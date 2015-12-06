@@ -6,7 +6,7 @@ module.exports = function (grunt) {
                 all: ['Gruntfile.js', 'lib/*.js', 'test/*.js'],
                 options: {
                     reporter: require('jshint-stylish'),
-                    reporterOutput: 'jshint.html'
+                    reporterOutput: 'jshintreporter/jshint.html'
                 },
             },
             simplemocha: {
