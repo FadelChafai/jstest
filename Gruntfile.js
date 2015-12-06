@@ -35,31 +35,6 @@ module.exports = function (grunt) {
                 src: ['lib/*.js'],
                 dest: 'dist/built.js',
             },
-        },
-        jenkins: {
-            src: ['test/**/*.js'],
-            options: {
-                reporter: 'xunit',
-                output: 'build/test-result.xml'
-            }
-        },
-        cobertura: {
-            options: {
-                reporter: 'mocha-cobertura-reporter',
-                require: ['chai'],
-                output: 'build/cobertura.xml',
-                coverage: true
-            },
-            src: ['test/**/*.js']
-        },
-        coveragehtml: {
-            options: {
-                reporter: 'html-cov',
-                require: ['chai'],
-                output: 'build/coverage.html'
-
-            },
-            src: ['test/**/*.js']
         }
 
     }
@@ -69,9 +44,8 @@ grunt.loadNpmTasks('grunt-simple-mocha');
 grunt.loadNpmTasks('grunt-karma');
 grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-contrib-concat');
-
-// Default task.
+    
 grunt.registerTask('default', ['simplemocha', 'karma']);
-grunt.registerTask('jenkins', ['jshint','simplemocha', 'karma', 'jshint', 'concat', 'cobertura', 'coveragehtml']);
+grunt.registerTask('jenkins', ['jshint','simplemocha', 'karma', 'jshint', 'concat']);
 }
 ;
