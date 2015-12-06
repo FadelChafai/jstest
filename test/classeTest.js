@@ -17,7 +17,7 @@ describe('Test: ', function(){
 		
 		//it.only
 		it('Tester maFonction', function(){
-			assert.equal(Class.maFonction(10,1),1);
+			assert.equal(Class.maFonction(10,10),1);
 		});
 		
 		it('Tester Division par 0', function(){
@@ -25,7 +25,7 @@ describe('Test: ', function(){
 		});
 		
 		it.skip('Tester should', function(){
-			Class.maFonction(10,10).should.be.equal(Infinity);
+			Class.maFonction(10,0).should.be.equal(Infinity);
 		});
 		
 		it('future test');

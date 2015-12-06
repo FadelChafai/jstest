@@ -8,7 +8,7 @@ describe('Demo test: ', function(){
 		
 		var $a = 2;
 		
-		assert.equal($a * 2, 14 );
+		assert.equal($a * 2, 4 );
 	});
 	
 	it('Fair un 2eme test', function(){
