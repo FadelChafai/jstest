@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ci-test": "istanbul cover tape \"test/*-test.js\" > test.tap && istanbul report clover"
+    "ci-test": "istanbul cover tape \"test/*Test.js\" > test.tap && istanbul report clover"
   },
   "author": "",
   "license": "BSD-2-Clause",
